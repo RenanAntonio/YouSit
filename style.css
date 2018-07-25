@@ -1,0 +1,838 @@
+@font-face {
+    font-family: Kaushan;
+    src: url(fontes/KaushanScript-Regular.otf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(fontes/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Segoeui;
+    src: url(fontes/segoeui.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+	background: #DDD;
+    margin: 0;
+
+}
+
+@keyframes bouncing {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(5%); }
+    100% { transform: translateY(0); }
+}
+
+#barraTopo {
+    color: #000;
+	width: 100%;
+	height: 47px;
+	background: #EEE;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 7;
+	border-bottom: 3px solid #999;
+}
+
+.container {
+    font-family: Helvetica;
+    color: #FFF;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.page {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 500px;
+	top: 50px;
+    color: #000;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.logo {
+    background: url(imagens/logo_chair.png) 0px 10px no-repeat;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    margin: 0 auto;
+    font-family: Kaushan;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    background-size: 30px;
+    padding-left: 30px;
+}
+
+.logo a {
+    color: #000;
+}
+
+#barraTopo p {
+    float: left;
+    width: 280px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+
+
+
+/*  Menu */
+
+.menuIcon {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(imagens/menu.png) no-repeat;
+    background-size: 35px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.menuIcon span {
+    display: none;
+    padding-left: 75px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    background: #333;
+    width: 250px;
+    height: 100%;
+    top: 49px;
+    z-index: 9;
+    border-right: 1px solid #CCCS;
+}
+
+ul.paginas {
+    display: none;
+    float: left;
+    padding: 0;
+    width: 100%;
+    color: #FFF;
+}
+
+ul.paginas a {
+    color: #CCC;
+}
+
+.paginas li {
+    list-style: none;
+    width: 100%;    
+    height: 50px;
+    text-align: center;
+    padding-top: 17px;
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paginas li:hover {
+    background: #0A0A0A;
+}
+
+/*  Fim - Menu  */
+
+
+
+
+
+.areaLista {
+    width: 30%;
+    overflow: hidden;
+    height: 100%;
+    background: #FFF;
+    -webkit-box-shadow: -5px 2px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 2px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: -5px 2px 16px -2px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
+.areaMapa {
+    width: 70%;
+    margin-top: 10px;
+    float: left;
+}
+
+
+h1.titulo {
+    font-family: OpenSans;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #000;
+}
+
+h1.titulo.espera {
+    margin-top: 0;
+}
+
+.reservaCadastrada h1.titulo{
+    margin-bottom: 100px;
+}
+
+.login h1.titulo {
+    font-size: 100px;
+    font-weight: normal;
+    font-family: Kaushan;
+}
+
+form#formlogin {
+    float: left;
+    width: 100%;
+}
+
+.formulario {
+    text-align: center;
+    width: 500px;
+    float: left;
+    margin-left: -250px;
+    position: relative;
+    left: 50%;
+}
+
+.login .formulario {
+    width: 100%;
+    position: relative;
+    height: auto;
+    float: initial;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+}
+
+.mensagem {
+    text-align: center;
+    margin: 0 auto;    
+    font-size: 20px;
+    top: 50px;
+}
+
+.boxCodigo {
+    margin: 40px auto;
+    width: 250px;
+    height: 90px;
+    background: #e28916;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.campo {
+    float: left;
+    clear: both;
+    width: 500px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.login .campo {
+    float: initial;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.campo.duasLinhas label{
+    padding-top: 0px;
+    margin-top: -3px;
+}
+
+.campo input[type="text"], .campo input[type="password"], .campo select {
+    float: right;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login .campo input[type="text"], .login .campo input[type="password"], .login .campo select {
+    float: initial;
+}
+
+.campo label {
+    float: left;
+    padding-top: 9px;
+    width: 190px;
+    text-align: right;
+}
+
+.campo.check {
+    width: 300px;
+    float: right;
+    margin: 0;
+}
+
+.campo.check label {
+    text-align: left;
+    width: 300px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.campo input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.login input.cadastrar {
+    width: 300px;
+    margin-left: -150px;
+}
+
+input.cadastrar {
+    background: #e28916;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    clear: both;
+    border: none;
+    outline: none;
+    left: 50%;
+    position: relative;
+    margin-left: -100px;
+    margin-bottom: 50px;
+}
+
+.msgErro {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 100px;
+    margin-bottom: 10px;
+    color: #de6969;
+    font-weight: bold;
+}
+
+.msgErro.success {
+    color: #27ae60;
+}
+
+.login .msgErro {
+    text-align: left;
+}
+
+
+
+/*  MAPA DE MESAS   */
+
+.wrapMesas {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.wrapMesas .mesa:nth-child(3) {
+    clear: both;
+}
+
+.mapa {
+    width: 780px;
+    position: relative;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+.mesa {
+    background: #c0392b;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.mesa:hover {
+    background: #712929;
+}
+
+.mesa.disponivel {
+    background: #27ae60;
+}
+
+.mesa.disponivel:hover {
+    background: #28583C;
+}
+
+.mesa.aguardo {
+    background: #efd25e;
+}
+
+.mesa.aguardo:hover {
+    opacity: 0.7;
+}
+
+.mesa span {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.mesa span.sub {
+    float: left;
+    clear: both;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+.msgOutraMesa {
+    width: 210px;
+    float: left;
+    position: absolute;
+    top: -80px;
+    background: #c0392b;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 70px;
+    padding-top: 20px;
+}
+
+.preferencial {
+    float: left;
+    clear: both;
+    background: url(imagens/preferencial.png) no-repeat;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 11px;
+    height: 20px;
+    margin-bottom: 50px;
+}
+
+.legenda {
+    width: 780px;
+    position: relative;
+    margin: 0 auto;
+    clear: both;
+    padding-left: 40px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.legendaDisp {
+    width: 30px;
+    height: 15px;
+    background: #27ae60;
+    float: left;
+    margin-right: 110px;
+}
+
+.legendaIndisp {
+    width: 30px;
+    height: 15px;
+    background: #c0392b;
+    float: left;
+}
+
+.legenda p {
+    margin-left: 35px;
+    margin-top: 1px;
+    float: left;
+    width: 120px;
+    font-size: 11px;
+}
+
+.wrapLista {
+    float: left;
+    width: 100%;
+}
+
+.lista {
+    float: left;
+    clear: both;
+    font-size: 14px;
+    overflow-y: auto;
+    background: #FFF;
+    width: 100%;
+}
+
+ul.resUl {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 593px;
+}
+
+ul.resUl.resNome {
+    width: 40%;
+}
+
+ul.resUl.resNome li.reservaLi {
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.labelInfo ul.resUl.resRemover {
+    padding-left: 44px;
+    box-sizing: border-box;
+}
+
+ul.resUl.resNomePrinc {
+    width: 39%;
+}
+
+ul.resUl.resTelefone {
+    width: 20%;
+    text-align: center;
+}
+
+ul.resUl.resLugares {
+    width: 20%;
+    text-align: center;
+}
+
+ul.resUl.resNotificar .reservaLi, ul.resUl.resRemover .reservaLi {
+    width: 100%;
+    text-align: center;
+}
+
+ul.resUl .remover {
+    background: url(imagens/close_red.png) no-repeat center;
+    background-size: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    float: right;
+    right: 20px;
+    position: absolute;
+    top: 17px;
+}
+
+li.reservaLi[especial="1"] {
+    background: url(imagens/preferencial.png) no-repeat 300px 24px #FFF;
+    background-size: 20px;
+}
+
+ul.resUl .reservaLi.hoverBG {
+    background: #AAA;
+    color: #FFF;
+}
+
+li.reservaLi[especial="1"].hoverBG {
+    background: url(imagens/preferencial.png) no-repeat 300px 24px #BBB;
+    background-size: 20px;
+}
+
+ul.resUl.resRemover .reservaLi.hoverBG {
+    background: url(imagens/close_red.png) no-repeat center #AAA;
+    color: #FFF;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+ul.resUl .reservaLi.resSelecionada {
+    background: #E8BC7A;
+    font-weight: bold;
+    color: #333;
+}
+
+li.reservaLi[especial="1"].resSelecionada {
+    background: url(imagens/preferencial.png) no-repeat 300px 24px #E8BC7A;
+    background-size: 20px;
+}
+
+ul.resUl.resRemover .reservaLi.resSelecionada {
+    background: url(imagens/close_red.png) no-repeat center #E8BC7A;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+ul.resUl.resNome .reservaLi, ul.resUl.resLugares .reservaLi, ul.resUl.resTelefone .reservaLi, ul.resUl.resNotificar .reservaLi {
+    border-right: 1px solid #AAA;
+}
+
+.labelInfo {
+    position: relative;
+    float: left;
+    background: #e28916;
+    width: 100%;
+}
+
+.labels {
+    background: #e28916;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+li.reservaLi {
+    position: relative;
+    cursor: pointer;
+    background: #FFF;
+    box-sizing: border-box;
+    color: #333;
+    text-align: center;
+    margin-top: 0px;
+    border-bottom: 1px solid #999;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    list-style: none;
+}
+
+li.reservaLi > div {
+    float: left;
+    font-family: OpenSans;
+    padding-top: 2px;
+    max-width: 220px;
+}
+
+li.reservaLi .nome {
+    font-size: 18px;
+    text-align: left;
+}
+
+li.reservaLi .lugares {
+    clear: both;
+    background: #f1c40f;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-top: 4px;
+    margin-right: 10px;
+}
+
+li.reservaLi .telefone {
+    clear: both;
+    text-align: left;
+}
+
+li.reservaLi .lugares span {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+}
+
+.bgMensagem {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9;
+    left: 0;
+    opacity: 0.7;
+}
+
+.mensagemLightbox, .mensagemLightboxDisp {
+    display: none;
+    width: 450px;
+    height: 230px;
+    background: #CCC;
+    z-index: 10;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -115px;
+    font-family: Helvetica;
+}
+
+p.msgMesa {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+input.btMesaAlerta {
+    background: #c0392b;
+    color: #FFF;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 35px;
+    cursor: pointer;
+    float: left;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-right: 20px;
+}
+
+input.btMesaAlerta.sim {
+    margin-left: 92px;
+    background: #27ae60;
+}
+
+
+
+.semFila {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 110px 80px 10px 80px;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.notificacao {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 70px;
+    cursor: pointer;
+    background: url(imagens/man-running.jpg) no-repeat center #FFF;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 35px;
+    font-size: 14px;
+    padding-left: 2px;
+    color: #999;
+    border: 3px solid #e74c3c;
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(88, 88, 88, 0.75);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(88, 88, 88, 0.75);
+    box-shadow: 2px 2px 7px 1px rgba(88, 88, 88, 0.75);
+    background-size: 30px;
+}
+
+.notificacao:hover {
+    animation: bouncing 0.5s infinite;
+    animation-timing-function: ease;
+}
+
+.notificacao span {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: #e74c3c;
+    left: 40px;
+    position: relative;
+    top: -43px;
+    border-radius: 25px;
+    color: #FFF;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 4px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.fade_aguardo {
+    display: none;
+    background: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+}
+
+.lista_aguardo {
+    display: none;
+    width: 600px;
+    height: 450px;
+    position: fixed;
+    background: #FFF;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    margin-top: -225px;
+    margin-left: -300px;
+}
+
+.lista_aguardo li {
+    cursor: initial;
+}
+
+.chegou {
+    width: 90px;
+    height: 30px;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    color: #27ae60;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.chegou:hover {
+    background: #27ae60;
+    color: #FFF;
+}
+
+.lista_aguardo h1 {
+    color: #666;
+    text-align: center;
+    font-size: 22px;
+    font-family: OpenSans;
+}
+
+/*  FIM - MAPA DE MESAS   */

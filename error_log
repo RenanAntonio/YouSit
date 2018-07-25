@@ -1,0 +1,16 @@
+[06-Apr-2016 21:02:00 America/Chicago] PHP Fatal error:  Call to undefined function GetSQLValueString() in /home/topso213/public_html/yousit/postReserva.php on line 11
+[06-Apr-2016 21:43:35 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 66
+[06-Apr-2016 21:43:35 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 66
+[06-Apr-2016 21:45:00 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 66
+[06-Apr-2016 21:53:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/topso213/public_html/yousit/reserva_cadastrada.php:67) in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 68
+[06-Apr-2016 21:53:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/topso213/public_html/yousit/reserva_cadastrada.php:67) in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 68
+[06-Apr-2016 21:54:41 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/topso213/public_html/yousit/reserva_cadastrada.php:67) in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 68
+[06-Apr-2016 22:06:37 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 75
+[06-Apr-2016 22:06:37 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 75
+[06-Apr-2016 22:06:39 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 75
+[06-Apr-2016 22:08:09 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 73
+[06-Apr-2016 22:10:25 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 73
+[06-Apr-2016 22:18:49 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting T_VARIABLE or '$' in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 7
+[06-Apr-2016 22:21:35 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 10
+[06-Apr-2016 22:22:16 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, string given in /home/topso213/public_html/yousit/reserva_cadastrada.php on line 9
+[09-Apr-2016 14:05:26 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/topso213/public_html/yousit/cadastrar_reserva.php on line 53

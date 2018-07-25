@@ -1,0 +1,88 @@
+.container {
+	height: 100%;
+}
+
+#barraTopo {
+    height: 150px;
+    position: fixed;
+}
+
+.hiddenToken { 
+    display: none;
+}
+
+.page {
+    top: 155px;
+}
+
+.areaLista {
+	width: 100%;
+}
+
+.logo {
+    background: url(imagens/logo_chair.png) 0px 30px no-repeat;
+    width: 160px;
+    height: 110px;
+    position: relative;
+    margin: 0 auto;
+    font-family: Kaushan;
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    background-size: 90px;
+    padding-left: 90px;
+    padding-top: 15px;
+}
+
+#app .areaLista {
+    position: relative;
+    top: 0;
+}
+
+ul.resUl {
+    height: 100%;
+}
+
+li.reservaLi .lugares {
+    width: 180px;
+    height: 180px;
+    font-size: 45px;
+}
+
+li.reservaLi .lugares span {
+    font-size: 65px;
+}
+
+li.reservaLi > div {
+    font-size: 50px;
+    padding-top: 5px;
+    width: 630px;
+}
+
+li.reservaLi .nome {
+    font-size: 65px;
+}
+
+li.reservaLi.destaque {
+    background: #CCC;
+}
+
+li.reservaLi.destaque .lugares {
+    border: 5px solid #FFF;
+}
+
+li.reservaLi[especial="1"] {
+    background: url(imagens/preferencial.png) no-repeat 860px 60px #FFF;
+    background-size: 70px;
+}
+
+.semFila {
+    font-size: 5em;
+}
+
+li.reservaLi .estimativa {
+    clear: both;
+    text-align: left;
+    font-size: 43px;
+    color: #666;
+}
